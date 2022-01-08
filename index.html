@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dream punks</title>
+
+    <style media="screen">
+    @font-face {
+      font-family: "Londrina";
+      src: url(assets/font/LondrinaSolid-Regular.ttf);
+    }
+    @font-face {
+      font-family: "Helvetica Neue";
+      src: url(assets/font/HelveticaNeue Medium.ttf);
+    }
+    * {
+    	list-style:none;
+    	margin:0;
+    	outline:none;
+    	padding:0;
+    	text-decoration:none;
+      -webkit-box-sizing: border-box;
+      box-sizing:border-box;
+    }
+    body{
+      font-family: Londrina;
+      font-size:23px;
+      background:darkgrey;
+      color:white;
+    }
+    .title{
+      font-size:50px;
+      text-align: center;
+    }
+    .selectionWrap{
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      margin:30px;
+    }
+    .optionsWrap{
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 32px;
+    }
+    .mySelector{
+      display: flex;
+      flex-direction: column;
+      width: 190px;
+      height:30px;
+      padding-top:5px;
+
+    }
+    .mySelector{
+      /* padding:10px; */
+      margin:10px 0;
+    }
+    label{
+      text-transform: capitalize;
+    }
+    .canvasWrap{
+      margin-top:30px
+    }
+    canvas{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top:20px;
+      border:3px dotted black;
+
+    }
+    .export{
+      height:50px;
+      width:181px;
+      background:grey;
+      border: 1px solid black;
+      text-align: center;
+      padding-top:6px;
+      cursor:pointer;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 30px;
+      color: white;
+      margin-top:30px;
+    }
+    .export:hover{
+      background:whitesmoke;
+      color:black
+    }
+
+    </style>
+
+  </head>
+
+  <body>
+
+
+    <div class="canvasWrap">
+      <div class="title">
+        Dream Punk
+      </div>
+      <canvas id="canvas" width="600" height="600"></canvas>
+      <div class="export" onclick="downloadToad()">Download me</div>
+    </div>
+    <div class="selectionWrap"></div>
+
+    <script type="text/javascript" src="/main.js" defer></script>
+    <script type="text/javascript">
+    //   var myimage = new Image();
+    //       myimage.src = "/traits/mouth/mouth-beard.png";
+    //       myimage.className = "traitImg";
+    //       // document.body.appendChild(myimage);
+    //       // mycanvas.appendChild(myimage);
+    //
+    // setTimeout(function () {
+    //   var mycanvas = document.getElementById('canvas');
+    //   var context = mycanvas.getContext('2d');
+    //       context.drawImage(myimage, 10, 10);
+    //
+    // }, 1000);
+
+    </script>
+  </body>
+</html>
