@@ -44,12 +44,14 @@ async function getPunkTraits(){
         // mySelector.setAttribute("name", mytrait[i].name);
         optionsWrap.appendChild(mySelector);
 
-    var myoption = document.createElement('option');
-        myoption.value = "None";
-        myoption.setAttribute('data-option', traitsJson[i]);
-        myoption.innerText = "None";
-        mySelector.appendChild(myoption);
-
+    if (i != 0){
+      var myoption = document.createElement('option');
+          myoption.value = "None";
+          myoption.setAttribute('data-option', traitsJson[i]);
+          myoption.innerText = "None";
+          mySelector.appendChild(myoption);
+    }
+    
     for (var m = 0; m < mytrait.length; m++) {
 
 
