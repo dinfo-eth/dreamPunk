@@ -35,7 +35,7 @@ async function getPunkTraits(){
           mySelector.onchange = function(){
             gender = this.value;
             selectionWrap.innerHTML = "";
-            layersArray = {body:"",hair:"",nose:"",beard:"",mouth:"",eyes:""};
+            layersArray = {body:"",hair:"",nose:"",mouth:"",beard:"",eyes:""};
             getPunkTraits();
           }
         } else {
@@ -51,7 +51,7 @@ async function getPunkTraits(){
           myoption.innerText = "None";
           mySelector.appendChild(myoption);
     }
-    
+
     for (var m = 0; m < mytrait.length; m++) {
 
 
