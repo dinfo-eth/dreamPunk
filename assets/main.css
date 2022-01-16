@@ -79,8 +79,7 @@ canvas{
 }
 
 .credits{
-  margin: auto;
-  width: 50%;
+  text-align: center;
   font-size:14px;
 
 }
