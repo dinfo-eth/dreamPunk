@@ -77,3 +77,10 @@ canvas{
 .export:hover{
   background:black;
 }
+
+.credits{
+  margin: auto;
+  width: 50%;
+  font-size:14px;
+
+}
