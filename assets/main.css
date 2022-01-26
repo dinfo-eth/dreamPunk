@@ -81,5 +81,14 @@ canvas{
 .credits{
   text-align: center;
   font-size:14px;
+}
 
+@media only screen and (max-width: 1300px) {
+
+  .selectionWrap{
+    grid-template-columns: auto auto;
+  }
+  #canvas{
+    width:100%;
+  }
 }

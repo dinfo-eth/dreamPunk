@@ -3,7 +3,7 @@
 var selectionWrap = document.getElementsByClassName('selectionWrap')[0];
 let gender = "f";
 let traitsJson;
-getPunkTraits();
+
 
 async function getPunkTraits(){
 
@@ -23,7 +23,6 @@ async function getPunkTraits(){
         selectionWrap.appendChild(optionsWrap);
 
     var myLabel = document.createElement('LABEL');
-        // myLabel.setAttribute("for", mytrait[i].name);
         myLabel.innerText = traitsJson[i];
         optionsWrap.appendChild(myLabel);
 
@@ -41,7 +40,6 @@ async function getPunkTraits(){
         } else {
           mySelector.onchange = pickTrait;
         }
-        // mySelector.setAttribute("name", mytrait[i].name);
         optionsWrap.appendChild(mySelector);
 
     if (i != 0){
@@ -53,7 +51,6 @@ async function getPunkTraits(){
     }
 
     for (var m = 0; m < mytrait.length; m++) {
-
 
       var myoption = document.createElement('option');
           myoption.value = mytrait[m].fileId;
@@ -81,15 +78,18 @@ function pickTrait(){
     layersArray[theoption] = "";
 
   }
-  drawToad();
+  drawMe();
 }
+
+
+getPunkTraits()
+
 
 var canvasSize = 600;
 
-// reorder
 var layersArray = {body:"",hair:"",nose:"",mouth:"",beard:"",eyes:""};
 
-async function drawToad(mysrc){
+async function drawMe(mysrc){
 
   var mycanvas = document.getElementById('canvas');
       mycanvas.width = mycanvas.height = canvasSize;
