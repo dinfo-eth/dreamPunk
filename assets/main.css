@@ -27,12 +27,27 @@ label{
 select{
   font-family: 'Montserrat';
 }
+
+.gridWrap{
+  display: grid;
+  /* grid-template-columns: repeat(2, lfr); */
+  gap: 10px;
+
+}
 .selectionWrap{
   display: grid;
   grid-template-columns: auto auto auto auto;
   margin: 0px 10px 30px 10px;
+}
+
+.svgDisplay{
+  grid-column: 2/2;
+  grid-row: 1;
+  width:600px;
+  margin-top:20px;
 
 }
+
 .optionsWrap{
   margin-left: auto;
   margin-right: auto;
@@ -47,13 +62,25 @@ select{
 
 }
 .canvasWrap{
-  margin-top:15px
+  grid-column: 1/2;
+  grid-row: 1;
+  width:600px;
+  margin-top:20px;
 }
+
+#svgHolder{
+  width: 600px;
+  height: 600px;
+  border:3px dotted black;
+
+}
+
 canvas{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top:20px;
+  width: 600px;
+  height: 600px;
   border:3px dotted black;
 
 }

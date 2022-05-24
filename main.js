@@ -133,6 +133,9 @@ function svgPunk(){
     d = ImageTracer.getImgdata(canvas);
     svg = ImageTracer.imagedataToSVG(d);
     console.log(svg);
+    let svgDisplay = document.getElementById('svgHolder');
+    svgDisplay.innerHTML = svg;
+
     // console.log('inside svgpunk');
     // canvas.toBlob(function(blob){
     //   console.log(blob);

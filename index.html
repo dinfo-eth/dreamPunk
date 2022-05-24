@@ -8,21 +8,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/main.css">
 
+
     <title>Dream punks</title>
 
   </head>
 
   <body>
+    <div class="title">Dream Punks</div>
+    <div class="gridWrap">
 
-    <div class="canvasWrap">
-      <div class="title">Dream Punks</div>
+      <div class="canvasWrap">
+        <h4 id="punkDisplay">Your designed punk</h3>
+        <canvas id="canvas" width="600" height="600"></canvas>
+        <div class="export" onclick="downloadToad()">Download me</div>
+      </div>
 
-      <canvas id="canvas" width="600" height="600"></canvas>
-      <div class="export" onclick="downloadToad()">Download me</div>
-      <div class="export" onclick="svgPunk()">SVG</div>
+      <div class="svgDisplay">
+        <h4 id="svgDisplayText">Click the SVG button to see it in SVG</h3>
+        <div id="svgHolder"></div>
+
+        <div class="export" onclick="svgPunk()">SVG</div>
+      </div>
 
     </div>
+
     <div class="selectionWrap"></div>
+
+
+
 
     <div class="credits">
       By
@@ -31,7 +44,7 @@
       punk attributes from
       <a href ="https://github.com/cryptopunksnotdead/punks.blocks">punks.blocks.</a>
     </div>
-    
+
     <script src="imagetracer_v1.2.6.js"></script>
     <script type="text/javascript" src="/main.js" defer></script>
     <script type="text/javascript">
