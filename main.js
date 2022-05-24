@@ -1,5 +1,3 @@
-
-
 var selectionWrap = document.getElementsByClassName('selectionWrap')[0];
 let gender = "f";
 let traitsJson;
@@ -125,4 +123,21 @@ function downloadToad(){
       downloadLink.setAttribute('href', url);
       downloadLink.click();
     });
+}
+function svgPunk(){
+    //let downloadLink = document.createElement('a');
+    //downloadLink.setAttribute('download', 'MyDreamPunk.png');
+
+    let canvas = document.getElementById('canvas');
+    // https://github.com/jankovicsandras/imagetracerjs functions from this library.
+    d = ImageTracer.getImgdata(canvas);
+    svg = ImageTracer.imagedataToSVG(d);
+    console.log(svg);
+    // console.log('inside svgpunk');
+    // canvas.toBlob(function(blob){
+    //   console.log(blob);
+    //   svg = ImageTracer.getImgdata(blob);
+    //   console.log(svg)
+    // });
+
 }
